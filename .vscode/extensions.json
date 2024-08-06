@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "Prisma.prisma",
+    "eamodio.gitlens",
+    "bradlc.vscode-tailwindcss",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "burkeholland.simple-react-snippets",
+    "pkief.material-icon-theme",
+    "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+    "streetsidesoftware.code-spell-checker",
+    "dsznajder.es7-react-js-snippets",
+    "ofhumanbondage.react-proptypes-intellisense",
+    "humao.rest-client",
+  ]
+}

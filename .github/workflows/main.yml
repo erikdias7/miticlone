@@ -1,0 +1,34 @@
+name: Build and Deploy to Hostinger VPS
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Setup SSH
+      uses: webfactory/ssh-agent@v0.9.0
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+    - name: Add VPS to known hosts
+      run: |
+        mkdir -p ~/.ssh
+        ssh-keyscan ${{ secrets.VPS_IP }} >> ~/.ssh/known_hosts
+
+    - name: SSH into VPS and deploy
+      run: |
+        ssh ${{ secrets.VPS_USER }}@${{ secrets.VPS_IP }} << 'EOF'
+          cd ${{ secrets.VPS_DEPLOY_PATH }}
+          git fetch --prune
+          git pull
+          npm install
+          npm run build
+          pm2 stop ${{ secrets.PM2_NAME }}
+          pm2 delete ${{ secrets.PM2_NAME }}
+          pm2 start npm --name ${{ secrets.PM2_NAME }} -- run start
+        EOF

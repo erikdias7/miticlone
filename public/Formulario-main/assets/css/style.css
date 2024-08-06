@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E8EEF3;
+}
+
+.container {
+    max-width: 500px;
+    margin: 30px auto;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E8EEF3;
+    border-radius: 21px;
+    padding: 40px;
+    box-shadow: 15px 15px 27px -4px rgba(0, 0, 0, 0.1), -15px -15px 27px -4px rgba(255, 255, 255, 1);
+}
+
+.container2 {
+  max-width: 500px;
+  margin: 30px auto;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #E8EEF3;
+  border-radius: 21px;
+  padding: 40px;
+  box-shadow: 15px 15px 27px -4px rgba(0, 0, 0, 0.1), -15px -15px 27px -4px rgba(255, 255, 255, 1);
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: -1%;
+    bottom: -30px;
+}
+
+.logo img {
+    width: 417px;
+    height: auto;
+}
+
+select#parentesco{
+  width: 100%;
+    /* Define a largura do campo de seleção */
+    padding: 7px;
+    /* Define o preenchimento interno do campo */
+    border-radius: 10px;
+    /* Define o raio da borda */
+    border: 1px solid #009ADD;
+    /* Define a largura, estilo e cor da borda */
+    background-color: #fff;
+    /* Define a cor de fundo do campo */
+    font-size: 16px;
+    /* Define o tamanho da fonte */
+    color: #009ADD;
+    /* Define a cor do texto */
+    box-sizing: border-box;
+    /* Inclui a largura e a altura da borda e do preenchimento */
+}
+
+select#quantidade-dependentes {
+    width: 20%;
+    /* Define a largura do campo de seleção */
+    padding: 7px;
+    /* Define o preenchimento interno do campo */
+    border-radius: 10px;
+    /* Define o raio da borda */
+    border: 1px solid #009ADD;
+    /* Define a largura, estilo e cor da borda */
+    background-color: #fff;
+    /* Define a cor de fundo do campo */
+    font-size: 16px;
+    /* Define o tamanho da fonte */
+    color: #009ADD;
+    /* Define a cor do texto */
+    box-sizing: border-box;
+    /* Inclui a largura e a altura da borda e do preenchimento */
+    position: relative;
+    right: -40%;
+  }
+
+select#localidade {
+    width: 100%;
+    /* Define a largura do campo de seleção */
+    padding: 7px;
+    /* Define o preenchimento interno do campo */
+    border-radius: 10px;
+    /* Define o raio da borda */
+    border: 1px solid #009ADD;
+    /* Define a largura, estilo e cor da borda */
+    background-color: #fff;
+    /* Define a cor de fundo do campo */
+    font-size: 16px;
+    /* Define o tamanho da fonte */
+    color: #009ADD;
+    /* Define a cor do texto */
+    box-sizing: border-box;
+    /* Inclui a largura e a altura da borda e do preenchimento */
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .logo,
+    .imagecad {
+        display: none;
+    }
+}
+
+h1 {
+    position: initial;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #009ADD;
+    font-size: 24px;
+}
+
+h2 {
+  position: initial;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #009ADD;
+  font-size: 17px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #009ADD;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #009ADD;
+    border-radius: 10px;
+    color: #009ADD;
+    margin-bottom: -10px;
+}
+
+input:focus {
+    border-color: #009ADD;
+    border-width: 2px;
+    outline: none;
+    color: #009ADD;
+}
+
+.error-message {
+    color: #009ADD;
+    font-size: 14px;
+    margin-bottom: 13px;
+    /* Espaçamento superior para separar a mensagem do campo */
+    display: block;
+    /* Garante que a mensagem seja exibida como bloco (em uma nova linha) */
+}
+
+.erro-message {
+    color: #009ADD;
+    font-size: 14px;
+    margin-top: 13px;
+    /* Espaçamento superior para separar a mensagem do campo */
+    display: block;
+    /* Garante que a mensagem seja exibida como bloco (em uma nova linha) */
+}
+
+
+.campo-data {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #009ADD;
+    border-radius: 10px;
+    color: #009ADD;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-30%);
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #009ADD;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container2,
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E8EEF3;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    margin-right: 90px;
+    background-color: #E8EEF3;
+    border-radius: 21px;
+    padding: 40px;
+    box-shadow: 15px 15px 27px -4px rgba(0, 0, 0, 0.1), -15px -15px 27px -4px rgba(255, 255, 255, 1);
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    position: absolute;
+    right: 30%;
+    top: 7%
+}
+
+.logo img {
+    width: 417px;
+    height: auto;
+}
+
+.imagecad {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    position: absolute;
+    right: 30%;
+    top: 30%
+}
+
+.clique {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    position: absolute;
+    right: 31.3%;
+    top: 50%
+}
+
+.imagecad img {
+    width: 430px;
+    height: auto;
+}
+
+
+h1 {
+    position: initial;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #009ADD;
+    font-size: 24px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #009ADD;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #009ADD;
+    border-radius: 10px;
+    color: #009ADD;
+    margin-bottom: -10px;
+}
+
+input:focus {
+    border-color: #00618F;
+    border-width: 2px;
+    outline: none;
+    color: #009ADD;
+}
+
+
+.error-message {
+    color: #009ADD;
+    font-size: 14px;
+    margin-bottom: 13px;
+    /* Espaçamento superior para separar a mensagem do campo */
+    display: block;
+    /* Garante que a mensagem seja exibida como bloco (em uma nova linha) */
+}
+
+.campo-data {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #009ADD;
+    border-radius: 10px;
+    color: #009ADD;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-30%);
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #009ADD;
+    color: #fff;
+    border: none;
+    border-radius: 21px;
+    cursor: pointer;
+    margin-top: 35px;
+}
+
+button:hover {
+    background-color: #0077B5;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateY(40%);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .logo img {
+        position: absolute;
+        top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateX(36%);
+        width: 300px;
+        /* Defina o tamanho desejado */
+        height: auto;
+        /* Isso permite que a altura seja ajustada automaticamente para manter a proporção */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .imagecad {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .clique {
+        display: none;
+    }
+}
